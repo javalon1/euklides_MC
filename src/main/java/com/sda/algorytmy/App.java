@@ -10,13 +10,12 @@ public class App {
         int a = scan.nextInt();
         int b = scan.nextInt();
 
-
         while (a != b) {
             if (a > b) {
                 a = a - b;
+            } else {
+                b = b - a;
             }
-            b = b - a;
-        }
-        System.out.println(a);
+        }System.out.println(a);
     }
 }
